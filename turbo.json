@@ -1,8 +1,21 @@
 {
   "$schema": "https://turbo.build/schema.json",
   "pipeline": {
+    "@apps/blog#build": {
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "!.next/cache/**", "public/**"]
+    },
+    "@apps/blog#copy:static": {
+      "dependsOn": ["build"]
+    },
+    "@apps/blog#copy:public": {
+      "dependsOn": ["build"]
+    },
+    "@apps/blog#start": {
+      "dependsOn": ["build", "copy:public", "copy:static"]
+    },
     "build": {
-      "outputs": [".next/**", "!.next/cache/**"]
+      "dependsOn": ["^build"]
     },
     "start": {
       "dependsOn": ["build", "test", "lint"]
