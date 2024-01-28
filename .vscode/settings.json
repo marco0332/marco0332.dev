@@ -1,0 +1,8 @@
+{
+  "eslint.lintTask.options": ".eslintrc.json",
+  "eslint.format.enable": false,
+  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+  "editor.formatOnSave": true,
+  "eslint.probe": ["javascript", "javascriptreact", "typescript", "typescriptreact", "html", "vue", "markdown", "json"],
+  "prettier.configPath": ".prettierrc.json"
+}
