@@ -1,0 +1,24 @@
+{
+  "name": "marco0332.dev",
+  "version": "0.1.0",
+  "description": "Dev Blog",
+  "main": "index.js",
+  "scripts": {
+    "blog": "pnpm --filter @apps/blog"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "publishConfig": {
+    "directory": "dist",
+    "linkDirectory": true
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.33.2"
+  }
+}
