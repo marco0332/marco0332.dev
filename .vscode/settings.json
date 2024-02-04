@@ -4,5 +4,8 @@
   "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
   "editor.formatOnSave": true,
   "eslint.probe": ["javascript", "javascriptreact", "typescript", "typescriptreact", "html", "vue", "markdown", "json"],
-  "prettier.configPath": ".prettierrc.json"
+  "prettier.configPath": ".prettierrc.json",
+  "javascript.format.semicolons": "ignore",
+  "prettier.withNodeModules": false,
+  "prettier.trailingComma": "es5"
 }
