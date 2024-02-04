@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Dev Blog",
   "main": "index.js",
-  "packageManager": "pnpm@7.5.1",
+  "packageManager": "pnpm@8.15.0",
   "scripts": {
     "blog": "pnpm --filter @apps/blog",
     "blog:build": "turbo run build --filter=@apps/blog",
